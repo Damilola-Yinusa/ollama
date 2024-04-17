@@ -1,0 +1,5 @@
+pip install langchain_community
+from langchain_community.llms import Ollama
+llm = Ollama(model="codellama")
+response = llm.invoke("???Ask a question here")
+print(response)
